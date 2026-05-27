@@ -1,0 +1,15 @@
+{
+	"name": "ADFproyectoDMC",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "chilecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "425cbed0-2710-4f77-9c9f-e1e769387ed0",
+		"tenantId": "4ec04dfa-eb46-4c8e-bfa8-a5a2c38f900c"
+	}
+}
