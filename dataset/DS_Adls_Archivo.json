@@ -1,15 +1,15 @@
 {
-	"name": "DS_ArchivoPdf",
+	"name": "DS_Adls_Archivo",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Ls_sftp",
+			"referenceName": "Ls_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "SftpLocation"
+				"type": "AzureBlobFSLocation"
 			}
 		}
 	}
