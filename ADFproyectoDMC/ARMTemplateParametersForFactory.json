@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFproyectoDMC"
+		},
+		"Ls_sftp_password": {
+			"value": ""
+		},
+		"Ls_sftp_properties_typeProperties_host": {
+			"value": "127.0.0.1"
+		},
+		"Ls_sftp_properties_typeProperties_userName": {
+			"value": "tester"
+		}
+	}
+}
