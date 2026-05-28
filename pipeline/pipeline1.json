@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copiar datos SFTP a ASDL",
+				"name": "Copiar datos SFTP a Landing",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -50,11 +50,11 @@
 				]
 			},
 			{
-				"name": "Notebook1",
+				"name": "Scrapping",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Copiar datos SFTP a ASDL",
+						"activity": "Copiar datos SFTP a Landing",
 						"dependencyConditions": [
 							"Succeeded"
 						]
