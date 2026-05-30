@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "P_Orquestador",
 	"properties": {
 		"activities": [
 			{
@@ -50,7 +50,7 @@
 				]
 			},
 			{
-				"name": "Scrapping",
+				"name": "Databricks Medallon",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -67,7 +67,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/edmontero10@gmail.com/00_Master_Orchestrator"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
