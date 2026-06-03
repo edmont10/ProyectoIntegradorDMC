@@ -1,6 +1,5 @@
 {
 	"name": "Ls_sftp",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "Sftp",
@@ -10,11 +9,19 @@
 			"skipHostKeyValidation": true,
 			"authenticationType": "Basic",
 			"userName": "tester",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlOWY3Y2FiNy04NTMxLTRkNDEtYTg3MS0yZTQzNzIwNjQ3OGUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "https://mykeyvault1723.vault.azure.net/secrets/passRebex/b346327315084e7e8caae804e84afee7"
+			}
 		},
 		"connectVia": {
 			"referenceName": "SelfHostedIntegrationRuntime",
 			"type": "IntegrationRuntimeReference"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
