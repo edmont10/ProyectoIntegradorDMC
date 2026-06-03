@@ -15,7 +15,7 @@
 					"referenceName": "AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "https://mykeyvault1723.vault.azure.net/secrets/passRebex/b346327315084e7e8caae804e84afee7"
+				"secretName": "passRebex"
 			}
 		},
 		"connectVia": {
